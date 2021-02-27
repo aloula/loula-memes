@@ -2,27 +2,23 @@ import React from 'react';
 import { Modal, ModalHeader, ModalBody, FormGroup, Label, NavbarBrand } from 'reactstrap';
 
 const photos = [
-  { src: '/images/vict-baby.png' },
-  { src: '/images/ned.jpeg' },
-  { src: '/images/devilgirl.jpg' },
-  { src: '/images/trump.jpg' },
-  { src: '/images/one-does-not.jpg' },
-  { src: '/images/dank.png' },
-  { src: '/images/boy.png' },
-  { src: '/images/sad.png' },
-  { src: '/images/wolf.png' },
-  { src: '/images/fry.jpg' },
-  { src: '/images/jobs.jpg' },
-  { src: '/images/phone.jpg' },
-  { src: '/images/oldie.png' },
-  { src: '/images/image.png' },
-  { src: '/images/doubt.png' },
-  { src: '/images/crying.png' },
-  { src: '/images/sponge.png' },
-  { src: '/images/thinker.png' },
-  { src: '/images/frust.png' },
-  { src: '/images/web.png' },
-  { src: '/images/penguin.png' }
+  { src: '/images/al_pacino.jpg' },
+  { src: '/images/al_pacino2.jpg' },
+  { src: '/images/al_pacino3.jpg' },
+  { src: '/images/de_niro.jpg' },
+  { src: '/images/de_niro2.jpg' },
+  { src: '/images/de_niro3.jpg' },
+  { src: '/images/de_niro4.jpg' },
+  { src: '/images/jack_nickolson.jpg' },
+  { src: '/images/jack_nickolson.png' },
+  { src: '/images/marlon_brando.jpg' },
+  { src: '/images/mr_bean.jpg' },
+  { src: '/images/o_iluminado.jpg' },
+  { src: '/images/obama.jpg' },
+  { src: '/images/sarah_connor.jpg' },
+  { src: '/images/Terminator-T800.jpg' },
+  { src: '/images/the_departed.jpg' },
+  { src: '/images/the_departed2.png' }
 ];
 
 const initialState = {
@@ -176,21 +172,12 @@ class MainPage extends React.Component {
       <div>
         <div className="main-content">
           <div className="sidebar">
-            <NavbarBrand href="/">Greengo-Memes</NavbarBrand>
+            <NavbarBrand href="/">Loula-Memes</NavbarBrand>
             <p>
               Create your own memes powered by AWS Amplify.
             </p>
             <p>
               You can add top and bottom text to a meme-template, move the text around and can save the image by downloading it.
-            </p>
-            <p>
-              Created by Blake Green
-            </p>
-            <p>
-              <a href="https://greengocloud.com">GreenGoCloud Website</a>
-            </p>
-            <p>
-              <a href="https://twitter.com/TSgt_Green">Twitter @TSgt_Green</a>
             </p>
           </div>
           <div className="content">
