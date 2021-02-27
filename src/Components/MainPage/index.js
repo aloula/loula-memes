@@ -201,7 +201,7 @@ class MainPage extends React.Component {
           </div>
         </div>
         <Modal className="meme-gen-modal" isOpen={this.state.modalIsOpen}>
-          <ModalHeader toggle={this.toggle}>Greengo-Memes</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Loula-Memes</ModalHeader>
           <ModalBody>
             <svg
               width={newWidth}
