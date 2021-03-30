@@ -16,6 +16,7 @@ const photos = [
   { src: '/images/o_iluminado.jpg' },
   { src: '/images/obama.jpg' },
   { src: '/images/sarah_connor.jpg' },
+  { src: '/images/talk_is_cheap.jpg' },
   { src: '/images/Terminator-T800.jpg' },
   { src: '/images/the_departed.jpg' },
   { src: '/images/the_departed2.png' }
