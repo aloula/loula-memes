@@ -131,9 +131,7 @@ class MainPage extends React.Component {
   handleMouseMove = (e, type) => {
     if (this.state.isTopDragging || this.state.isBottomDragging) {
       let stateObj = {};
-      if (type === "bottom" && this.state.isBottomDragging) {
-        stateObj = this.getStateObj(e, type);
-      } else if (type === "top" && this.state.isTopDragging){
+      if (type === "bottom" && this.state.isBottomDragging) stateObj = this.newMethod(stateObj, e, type); else if (type === "top" && this.state.isTopDragging){
         stateObj = this.getStateObj(e, type);
       }
       this.setState({
@@ -171,13 +169,20 @@ class MainPage extends React.Component {
     };
   }
 
+  newMethod(stateObj, e, type) {
+    {
+      stateObj = this.getStateObj(e, type);
+    }
+    return stateObj;
+  }
+
   getBase64Image(img) {
-    var canvas = document.createElement("canvas");
+    let canvas = document.createElement("canvas");
     canvas.width = img.width;
     canvas.height = img.height;
-    var ctx = canvas.getContext("2d");
+    let ctx = canvas.getContext("2d");
     ctx.drawImage(img, 0, 0);
-    var dataURL = canvas.toDataURL("image/png");
+    let dataURL = canvas.toDataURL("image/png");
     return dataURL;
   }
 
@@ -185,9 +190,9 @@ class MainPage extends React.Component {
     const image = photos[this.state.currentImage];
     const base_image = new Image();
     base_image.src = image.src;
-    var wrh = base_image.width / base_image.height;
-    var newWidth = 600;
-    var newHeight = newWidth / wrh;
+    let wrh = base_image.width / base_image.height;
+    let newWidth = 600;
+    let newHeight = newWidth / wrh;
     const textStyle = {
       fontFamily: "Impact",
       fontSize: "50px",
