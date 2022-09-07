@@ -29,7 +29,7 @@ const photos = [
   { src: '/images/jobs.jpg' },
   { src: '/images/marlon_brando.jpg' },
   { src: '/images/mr_bean.jpg' },
-  { src: '/images/ned.jpeg
+  { src: '/images/ned.jpeg' },
   { src: '/images/obama.jpg' },
   { src: '/images/o_iluminado.jpg' },
   { src: '/images/oldie.png' },
